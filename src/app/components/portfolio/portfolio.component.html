@@ -1,0 +1,16 @@
+<div class="portfolio-container">
+  <div class="portfolio-title">
+    <div class="header">Portfolio</div>
+    <div class="content">A showcase of software written by me</div>
+  </div>
+  <div class="portfolio-item" *ngFor="let project of projects">
+    <a class="header pointer" target="_blank" [attr.href]="project.link" title="Open {{project.name}}">
+      {{project.name}}
+    </a>
+    <div class="content" [innerHTML]="project.content"></div>
+    <div class="links">
+      <a target="_blank" [attr.href]="project.link" title="Open {{project.name}}"><i class="fas fa-external-link-alt"></i></a>
+      <a *ngIf="project.github" target="_blank" [attr.href]="project.github" title="Github"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</div>

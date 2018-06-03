@@ -1,0 +1,16 @@
+{
+  "professional": [
+    {
+      "name": "Example",
+      "content": "Content"
+    }
+  ],
+
+  "portfolio": [
+    {
+      "name": "Example",
+      "content": "Content",
+      "link": "www.google.com"
+    }
+  ]
+}

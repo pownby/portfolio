@@ -1,0 +1,12 @@
+<div class="professional-container">
+  <div class="professional-title">
+    <div class="header">Professional Projects</div>
+    <div class="content">Descriptions of some projects worked on in a professional setting</div>
+  </div>
+  <div class="professional-item" *ngFor="let project of projects">
+    <div class="header">
+      {{project.name}}
+    </div>
+    <div class="content"[innerHTML]="project.content"></div>
+  </div>
+</div>

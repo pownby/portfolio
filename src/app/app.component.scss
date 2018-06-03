@@ -1,0 +1,45 @@
+@import '../assets/scss/colors';
+
+.nav {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+  background-color: $primary-grey;
+  color: $primary-blue;
+
+  .name {
+    font-size: 20px;
+    transition: color 0.1s linear;
+    
+    &:hover {
+      color: #31989e;
+    }
+  }
+
+  .links {
+    display: flex;
+
+    .pointer {
+      margin-left: 20px;
+      margin-right: 20px;
+      transition: color 0.1s linear;
+
+      &:hover {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  .nav-link {
+    outline: none;
+  }
+}
+
+.content {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
