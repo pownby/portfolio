@@ -11,9 +11,17 @@
   background-color: $primary-grey;
   color: $primary-blue;
 
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+
   .name {
     font-size: 20px;
     transition: color 0.1s linear;
+
+    @media (max-width: 700px) {
+      margin-bottom: 10px;
+    }
     
     &:hover {
       color: #31989e;
@@ -23,6 +31,11 @@
   .links {
     display: flex;
 
+    @media (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
     .pointer {
       margin-left: 20px;
       margin-right: 20px;
@@ -30,6 +43,12 @@
 
       &:hover {
         color: $dark-blue;
+      }
+    }
+
+    .nav-link {
+      @media (max-width: 700px) {
+        margin-top: 10px;
       }
     }
   }
